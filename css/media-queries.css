@@ -10,25 +10,36 @@ body {
 
 @media screen and (max-width: 576px){
 
-}
+    }
 
-.alert-info {
-    background: lightskyblue;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
-    height: 50px;
-}
-
-div>a {
+.alert-info  {
+    align-self: center;
+    background-color: lightblue;
     text-decoration: none;
 }
-
-ul>li {
-    align-content: space-evenly;
-    list-style-type: none;
+@media screen and (max-width: 465px) {
+    nav {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    nav>ul {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    nav a {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.5em;
+    }
 }
 
-h1 {
-    margin: 0;
+@media screen and (min-width: 465px) and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav li {
+        margin-left: 15px;
+    }
 }
