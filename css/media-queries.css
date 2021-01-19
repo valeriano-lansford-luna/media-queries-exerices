@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+
+@media screen and (max-width: 576px){
+    div a>main {
+
+    }
+}
+
+.alert-info hidden-on-desktop {
+    background: blue;
+    justify-content: center;
+}
