@@ -26,13 +26,13 @@ body {
 }
 
 
-div>a {
+div > a {
     text-decoration: none;
     align-self: center;
     color: black;
 }
 
-ul>li {
+ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +42,7 @@ ul>li {
     background-color: lightgrey;
 
 }
+
 #main.main {
     text-align: left;
     padding-left: 10px;
@@ -51,7 +52,6 @@ ul>li {
 .sub-section {
     text-align: left;
     padding-left: 10px;
-
 
 
 }
@@ -68,7 +68,7 @@ h2 {
 
 }
 
-footer p{
+footer p {
     display: flex;
     flex-direction: row;
     padding-right: 5em;
@@ -80,12 +80,12 @@ footer p{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin:0;
+    margin: 0;
     padding: 0;
 
 }
 
-@media screen and (min-width:400px ) {
+@media screen and (min-width: 400px ) {
     img.responsive {
         width: 400px;
     }
@@ -102,7 +102,7 @@ footer p{
         margin: 2em;
     }
 
-    ul>li {
+    ul > li {
         display: inline-block;
         flex-direction: row;
         background: none;
@@ -133,17 +133,30 @@ footer p{
 
 @media screen and (min-width: 1200px) {
     img.responsive {
-        width: 1300px;
+        width: 1370px;
         height: 500px;
     }
 
-    .bottom-section {
+    /*.bottom-section {*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    justify-content: space-around;*/
+    /*    margin-top: 5em;*/
+    /*}*/
+
+    section {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        width: 50%;
         margin-top: 5em;
     }
-    footer p{
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer p {
         display: flex;
         flex-direction: row;
         margin-top: 10em;
@@ -153,13 +166,15 @@ footer p{
     #social-media-links {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        align-items: flex-end;
 
     }
-    .main {
-        width: 70%;
-    }
-    .sub-section {
-        width: 30%;
-    }
+
+    /*.main {*/
+    /*    width: 70%;*/
+    /*}*/
+
+    /*.sub-section {*/
+    /*    width: 30%;*/
+    /*}*/
 }
